@@ -25,7 +25,7 @@ form.addEventListener("submit", async (event) => {
     page = 1;
     gallery.innerHTML = '';
     loadMoreButton.style.display = 'none';
-    fetchAndRenderImages();
+    await fetchAndRenderImages();
 });
 
 loadMoreButton.addEventListener("click", fetchAndRenderImages);
